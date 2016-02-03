@@ -24,12 +24,12 @@ import com.databricks.spark.csv.util.TextFile
 package object csv {
   
   
-  private object Mode extends Enumeration {
+  object Mode extends Enumeration {
     type Mode = Value
     val PERMISSIVE, DROPMALFORMED, FAILFAST = Value
   }
 
-  private object ParseLib extends Enumeration {
+  object ParseLib extends Enumeration {
     type ParseLib = Value
     val commons, univocity = Value
   }
